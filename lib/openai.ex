@@ -2382,7 +2382,7 @@ defmodule OpenAI do
   Get vector store file.
   """
   def vector_stores_files_get(vector_store_id, file_id, config \\ %Config{}) do
-    VectorStores.Files.fetch(vector_store_id, file_id, config)
+    VectorStores.Files.fetch_by_id(vector_store_id, file_id, config)
   end
 
   @doc """
