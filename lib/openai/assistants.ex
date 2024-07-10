@@ -3,6 +3,7 @@ defmodule OpenAI.Assistants do
   alias OpenAI.Client
   alias OpenAI.Config
 
+  # Base URL for the Assistants API
   @base_url "/v1/assistants"
 
   def url(), do: @base_url
