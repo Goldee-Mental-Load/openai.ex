@@ -4,14 +4,14 @@ defmodule OpenAI.MixProject do
   def project do
     [
       app: :openai,
-      version: "0.6.1",
+      version: "0.6.2",
       elixir: "~> 1.11",
       description: description(),
       start_permanent: Mix.env() == :prod,
       deps: deps(),
       package: package(),
       name: "openai.ex",
-      source_url: "https://github.com/mgallo/openai.ex"
+      source_url: "https://github.com/Goldee-Mental-Load/openai.ex"
     ]
   end
 
@@ -26,7 +26,7 @@ defmodule OpenAI.MixProject do
 
   defp description do
     """
-    community-maintained OpenAI API Wrapper written in Elixir.
+    Copied from community-maintained OpenAI API Wrapper written in Elixir.
     """
   end
 
@@ -35,11 +35,9 @@ defmodule OpenAI.MixProject do
       licenses: ["MIT"],
       exclude_patterns: ["./config/*"],
       links: %{
-        "GitHub" => "https://github.com/mgallo/openai.ex"
+        "GitHub" => "https://github.com/Goldee-Mental-Load/openai.ex"
       },
-      maintainers: [
-        "mgallo"
-      ]
+      maintainers: ["Goldee"]
     ]
   end
 
